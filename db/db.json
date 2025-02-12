@@ -1,0 +1,144 @@
+{
+  "ingredientes": {
+    "batatas": [
+      {
+        "id": 1,
+        "tipo": "Simples"
+      },
+      {
+        "id": 2,
+        "tipo": "Cheddar e bacon"
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "tipo": "Coca-Cola"
+      },
+      {
+        "id": 2,
+        "tipo": "Fanta"
+      },
+      {
+        "id": 3,
+        "tipo": "Guaraná"
+      },
+      {
+        "id": 4,
+        "tipo": "Sprite"
+      },
+      {
+        "id": 5,
+        "tipo": "Suco de Uva"
+      },
+      {
+        "id": 6,
+        "tipo": "Suco de Laranja"
+      }
+    ],
+    "paes": [
+      {
+        "id": 1,
+        "tipo": "Australiano"
+      },
+      {
+        "id": 2,
+        "tipo": "Gergelim"
+      },
+      {
+        "id": 3,
+        "tipo": "Brioche"
+      },
+      {
+        "id": 4,
+        "tipo": "Integral"
+      }
+    ],
+    "carnes": [
+      {
+        "id": 1,
+        "tipo": "Maminha"
+      },
+      {
+        "id": 2,
+        "tipo": "Alcatra"
+      },
+      {
+        "id": 3,
+        "tipo": "Picanha"
+      },
+      {
+        "id": 4,
+        "tipo": "Costela"
+      },
+      {
+        "id": 5,
+        "tipo": "Veggie burger"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Bacon"
+      },
+      {
+        "id": 2,
+        "tipo": "Cheddar"
+      },
+      {
+        "id": 3,
+        "tipo": "Ovo"
+      },
+      {
+        "id": 4,
+        "tipo": "Tomate"
+      },
+      {
+        "id": 4,
+        "tipo": "Cebola roxa"
+      },
+      {
+        "id": 4,
+        "tipo": "Picles"
+      },
+      {
+        "id": 5,
+        "tipo": "Alface americana"
+      },
+      {
+        "id": 6,
+        "tipo": "Molho da casa"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": "1",
+      "tipo": "Solicitado"
+    },
+    {
+      "id": "2",
+      "tipo": "Em produção"
+    },
+    {
+      "id": "3",
+      "tipo": "Finalizado"
+    }
+  ],
+  "burgers": [
+    {
+      "id": "cf9c",
+      "nome": "Binho",
+      "carne": "Veggie burger",
+      "pao": "Integral",
+      "batata": "Simples",
+      "bebida": "Suco de Laranja",
+      "opcionais": [
+        "Tomate",
+        "Cebola roxa",
+        "Alface americana"
+      ],
+      "status": ""
+    }
+  ]
+}
