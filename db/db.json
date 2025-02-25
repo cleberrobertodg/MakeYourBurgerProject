@@ -138,7 +138,26 @@
         "Cebola roxa",
         "Alface americana"
       ],
-      "status": ""
+      "status": "Em produção"
+    },
+    {
+      "id": "7b17",
+      "nome": "Cleber",
+      "carne": "Costela",
+      "pao": "Gergelim",
+      "batata": "Cheddar e bacon",
+      "bebida": "Coca-Cola",
+      "opcionais": [
+        "Bacon",
+        "Ovo",
+        "Cebola roxa",
+        "Alface americana",
+        "Molho da casa",
+        "Picles",
+        "Tomate",
+        "Cheddar"
+      ],
+      "status": "Solicitado"
     }
   ]
 }

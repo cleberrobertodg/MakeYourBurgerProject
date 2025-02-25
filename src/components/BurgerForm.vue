@@ -122,8 +122,6 @@ import Message from './Message';
                 this.bebida = "";
                 this.opcionais = [];
 
-                
-
             }
         },
         mounted(){

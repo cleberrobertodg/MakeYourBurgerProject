@@ -5,9 +5,7 @@
 </template>
 
 <script>
-    export default{
-        
-    }
+    
 </script>
 
 <style scoped>
@@ -25,7 +23,12 @@
         color: #fff;
         text-align: center;
         font-size: 80px;
-        background-color: #222;
         padding: 20px 40px;
+        transition: .5s;
+    }
+
+    #main-banner h1:hover {
+        color: #FCBA03;
+        background-color: transparent;
     }
 </style>
