@@ -8,6 +8,14 @@
       {
         "id": 2,
         "tipo": "Cheddar e bacon"
+      },
+      {
+        "id": 3,
+        "tipo": "Onion rings"
+      },
+      {
+        "id": 4,
+        "tipo": "Nuggets"
       }
     ],
     "bebidas": [
@@ -17,11 +25,11 @@
       },
       {
         "id": 2,
-        "tipo": "Fanta"
+        "tipo": "Fanta laranja"
       },
       {
         "id": 3,
-        "tipo": "Guaraná"
+        "tipo": "Fanta guaraná"
       },
       {
         "id": 4,
@@ -29,11 +37,11 @@
       },
       {
         "id": 5,
-        "tipo": "Suco de Uva"
+        "tipo": "Del Valle Uva"
       },
       {
         "id": 6,
-        "tipo": "Suco de Laranja"
+        "tipo": "Del Valle Laranja"
       }
     ],
     "paes": [
@@ -52,6 +60,10 @@
       {
         "id": 4,
         "tipo": "Integral"
+      },
+      {
+        "id": 5,
+        "tipo": "Parmesão"
       }
     ],
     "carnes": [
@@ -73,6 +85,10 @@
       },
       {
         "id": 5,
+        "tipo": "Angus"
+      },
+      {
+        "id": 6,
         "tipo": "Veggie burger"
       }
     ],
@@ -87,27 +103,73 @@
       },
       {
         "id": 3,
-        "tipo": "Ovo"
+        "tipo": "Cebola crispy"
       },
       {
         "id": 4,
         "tipo": "Tomate"
       },
       {
-        "id": 4,
+        "id": 5,
         "tipo": "Cebola roxa"
       },
       {
-        "id": 4,
+        "id": 6,
         "tipo": "Picles"
       },
       {
-        "id": 5,
+        "id": 7,
         "tipo": "Alface americana"
       },
       {
-        "id": 6,
+        "id": 8,
         "tipo": "Molho da casa"
+      },
+      {
+        "id": 9,
+        "tipo": "Katchup"
+      },
+      {
+        "id": 10,
+        "tipo": "Mostarda"
+      },
+      {
+        "id": 11,
+        "tipo": "Maionese"
+      }
+    ],
+    "sobremesas": [
+      {
+        "id": 1,
+        "tipo": "Casquinha"
+      },
+      {
+        "id": 2,
+        "tipo": "Cascão"
+      },
+      {
+        "id": 3,
+        "tipo": "Açaí"
+      },
+      {
+        "id": 4,
+        "tipo": "Frozen yogurt"
+      },
+      {
+        "id": 4,
+        "tipo": "Torta de maçã"
+      },
+      {
+        "id": 5,
+        "tipo": "Torta de pêssego"
+      },
+      {
+        "id": 6,
+        "tipo": "Brownie"
+      },
+      {
+        "id": 7,
+        "tipo": "Pettit gateau"
       }
     ]
   },
@@ -127,36 +189,64 @@
   ],
   "burgers": [
     {
-      "id": "cf9c",
-      "nome": "Binho",
-      "carne": "Veggie burger",
-      "pao": "Integral",
-      "batata": "Simples",
-      "bebida": "Suco de Laranja",
+      "id": "8aae",
+      "nome": "Cleber",
+      "carne": "Alcatra",
+      "pao": "Brioche",
+      "batata": "Onion rings",
+      "bebida": "Fanta laranja",
       "opcionais": [
+        "Bacon",
+        "Cheddar",
+        "Cebola crispy",
         "Tomate",
         "Cebola roxa",
-        "Alface americana"
+        "Picles",
+        "Alface americana",
+        "Molho da casa",
+        "Katchup",
+        "Mostarda",
+        "Maionese"
       ],
-      "status": "Em produção"
+      "sobremesa": "Cascão",
+      "status": "Solicitado"
     },
     {
-      "id": "7b17",
-      "nome": "Cleber",
-      "carne": "Costela",
-      "pao": "Gergelim",
-      "batata": "Cheddar e bacon",
+      "id": "ebbf",
+      "nome": "CLEBER ROBERTO TESTE",
+      "carne": "Maminha",
+      "pao": "Australiano",
+      "batata": "Simples",
       "bebida": "Coca-Cola",
       "opcionais": [
         "Bacon",
-        "Ovo",
-        "Cebola roxa",
-        "Alface americana",
-        "Molho da casa",
         "Picles",
+        "Molho da casa",
+        "Cheddar",
+        "Cebola roxa",
+        "Alface americana"
+      ],
+      "sobremesa": "Pettit gateau",
+      "status": "Solicitado"
+    },
+    {
+      "id": "6e2b",
+      "nome": "Eduardo",
+      "carne": "Picanha",
+      "pao": "Australiano",
+      "batata": "Cheddar e bacon",
+      "bebida": "Fanta laranja",
+      "opcionais": [
+        "Bacon",
+        "Cebola crispy",
+        "Mostarda",
+        "Maionese",
+        "Katchup",
+        "Alface americana",
         "Tomate",
         "Cheddar"
       ],
+      "sobremesa": "Açaí",
       "status": "Solicitado"
     }
   ]

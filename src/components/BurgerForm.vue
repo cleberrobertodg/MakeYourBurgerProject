@@ -15,9 +15,9 @@
                     </select>
                 </div>
                 <div class="input-container">
-                    <label for="batata">Escolha a batata:</label>
+                    <label for="batata">Escolha o acompanhamento:</label>
                     <select name="batata" id="batata" v-model="batata">
-                        <option value="">Selecione a sua batata</option>
+                        <option value="">Selecione o seu acompanhamento</option>
                         <option v-for="batata in batatas" :key="batata.id" :value="batata.tipo">{{ batata.tipo }}</option>
                     </select>
                 </div>
@@ -42,6 +42,13 @@
                         <span>{{ opcional.tipo }}</span>
                     </div>
                 </div>
+                <div class="input-container">
+                    <label for="sobremesa">Escolha sua sobremesa:</label>
+                    <select name="sobremesa" id="sobremesa" v-model="sobremesa">
+                        <option value="">Selecione a sobremesa</option>
+                        <option v-for="sobremesa in sobremesas" :key="sobremesa.id" :value="sobremesa.tipo">{{ sobremesa.tipo }}</option>
+                    </select>
+                </div>
                 
                 <div class="input-container">
                     <input type="submit" class="submit-btn" value="Criar meu Burger!">
@@ -61,12 +68,14 @@ import Message from './Message';
                 paes: null,
                 carnes: null,
                 opcionaisdata: null,
+                sobremesas: null,
                 batatas: null,
                 bebidas: null,
                 nome: null,
                 pao: null,
                 carne: null,
                 opcionais: [],
+                sobremesa: null,
                 batata: null,
                 bebida: null,
                 msg: null
@@ -81,6 +90,7 @@ import Message from './Message';
                 this.paes = data.paes
                 this.carnes = data.carnes
                 this.opcionaisdata = data.opcionais
+                this.sobremesas = data.sobremesas
                 this.batatas = data.batatas
                 this.bebidas = data.bebidas
 
@@ -96,6 +106,7 @@ import Message from './Message';
                     batata: this.batata,
                     bebida: this.bebida,
                     opcionais: Array.from(this.opcionais),
+                    sobremesa: this.sobremesa,
                     status: "Solicitado"
                 }
                 
@@ -112,7 +123,7 @@ import Message from './Message';
                 //coloca msg no sistema
                 this.msg = `Pedido N° ${res.id} realizado com sucesso`
                 //Limpa msg
-                setTimeout(()=> this.msg = "", 3000)
+                setTimeout(()=> this.msg = "", 2000)
 
                 // Limpa o formulário
                 this.nome = "";
@@ -120,7 +131,11 @@ import Message from './Message';
                 this.pao = "";
                 this.batata = "";
                 this.bebida = "";
-                this.opcionais = [];
+                this.opcionais = [],
+                this.sobremesas = "";
+
+                setTimeout(()=> window.location.href = "/pedidos", 2000)
+                
 
             }
         },
@@ -165,13 +180,24 @@ import Message from './Message';
 
     #opcionais-title{
         width: 100%;
+        margin-bottom: 5%;
+    }
+
+    /* #sobremesas-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+
+    #sobremesas-title{
+        width: 100%;
+        margin-bottom: 5%;
     }
 
     .checkbox-container{
         display: flex;
         align-items: flex-start;
         width: 50%;
-        margin-bottom: 20%;
+        margin-bottom: 5%;
     }
 
     .checkbox-container span,
@@ -191,7 +217,7 @@ import Message from './Message';
         border: 2px solid #222;
         padding: 10px;
         font-size: 16px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         cursor: pointer;
         transition: .5s;
     }

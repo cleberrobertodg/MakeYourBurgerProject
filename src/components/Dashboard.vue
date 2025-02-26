@@ -10,7 +10,8 @@
                 <div>Pão:</div>
                 <div>Carne:</div>
                 <div>Opcionais:</div>
-                <div>Ações:</div>
+                <div>Sobremesa:</div>
+                
             </div>
         </div>
         <div id="burger-table-rows">
@@ -26,6 +27,7 @@
                         <li v-for="(opcional, index) in burger.opcionais" :key="index">{{ opcional }}</li>
                     </ul>
                 </div>
+                <div>{{ burger.sobremesa }}</div>
                 <div class="selects">
                     <select name="status" class="status" @change="updateBurger($event, burger.id)">
                         <option value="">Selecione</option>
@@ -142,12 +144,14 @@ export default {
     #burger-table-heading{
         font-weight: bold;
         border-bottom: 3px solid #333;
+        width: 100%;
+        
     }
 
     #burger-table-heading div,
     .burger-table-row div{
-        width: 10%;
-        margin: 10px;
+        width: 5%;
+        margin: 20px;
     }
 
     .burger-table-row{
@@ -193,4 +197,7 @@ export default {
         list-style: none;
     }
 
+    li{
+        margin-bottom: 10px;
+    }
 </style>
