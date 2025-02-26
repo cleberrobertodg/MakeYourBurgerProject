@@ -60,7 +60,7 @@ export default {
     methods: {
         async getPedidos(){
 
-            const req = await fetch("https://gist.githubusercontent.com/cleberrobertodg/44fc147c168711eb7d6fd94314877866/raw/3e644876c254d688f4e085a74a0848d8de58f153/db.json");
+            const req = await fetch("http://localhost:3000/burgers");
 
             const data = await req.json();
 
@@ -74,7 +74,7 @@ export default {
 
         async getStatus(){
 
-            const req = await fetch("https://gist.githubusercontent.com/cleberrobertodg/44fc147c168711eb7d6fd94314877866/raw/3e644876c254d688f4e085a74a0848d8de58f153/db.json");
+            const req = await fetch("http://localhost:3000/status");
 
             const data = await req.json();
 
@@ -84,7 +84,7 @@ export default {
 
         },
         async deleteBurger(id){
-            const req = await fetch(`https://gist.githubusercontent.com/cleberrobertodg/44fc147c168711eb7d6fd94314877866/raw/3e644876c254d688f4e085a74a0848d8de58f153/db.json/${id}`, {
+            const req = await fetch(`http://localhost:3000/burgers/${id}`, {
             method: "DELETE"});
             const res = await req.json();
 
@@ -104,7 +104,7 @@ export default {
 
             const dataJson = JSON.stringify({status: option});
 
-            const req = await fetch(`https://gist.githubusercontent.com/cleberrobertodg/44fc147c168711eb7d6fd94314877866/raw/3e644876c254d688f4e085a74a0848d8de58f153/db.json/${id}`, {
+            const req = await fetch(`http://localhost:3000/burgers/${id}`, {
                 method: "PATCH",
                 headers: {"Content-Type": "application/json"},
                 body: dataJson
