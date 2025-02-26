@@ -84,7 +84,7 @@ export default {
     methods: {
         async getIngredientes() {
             // Fazendo uma requisição para o backend para obter os ingredientes
-            const res = await fetch("http://localhost:3000/ingredientes");
+            const res = await fetch("https://gist.githubusercontent.com/cleberrobertodg/44fc147c168711eb7d6fd94314877866/raw/3e644876c254d688f4e085a74a0848d8de58f153/db.json");
             const data = await res.json();
 
             console.log("DB::::", { data });
@@ -113,7 +113,7 @@ export default {
             const dataJson = JSON.stringify(data);
 
             // Requisição POST para o servidor backend
-            const req = await fetch("http://localhost:3000/burgers", {
+            const req = await fetch("https://gist.githubusercontent.com/cleberrobertodg/44fc147c168711eb7d6fd94314877866/raw/3e644876c254d688f4e085a74a0848d8de58f153/db.json", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: dataJson
