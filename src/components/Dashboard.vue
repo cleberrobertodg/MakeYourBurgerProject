@@ -3,7 +3,7 @@
         <Message :msg="msg" v-show="msg" />
         <div>
             <div id="burger-table-heading">
-                <div class="order id">N° Pedido:</div>
+                <div class="order id">Pedido:</div>
                 <div>Cliente:</div>
                 <div>Bebida:</div>
                 <div>Batata:</div>
@@ -11,6 +11,7 @@
                 <div>Carne:</div>
                 <div>Opcionais:</div>
                 <div>Sobremesa:</div>
+                <div>Status:</div>
                 
             </div>
         </div>
@@ -132,6 +133,7 @@ export default {
     #burger-table{
         max-width: 1200px;
         margin: 0 auto;
+        
     }
 
     #burger-table-heading,
@@ -139,6 +141,7 @@ export default {
     .burger-table-row{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between
     }
 
     #burger-table-heading{
@@ -157,7 +160,7 @@ export default {
     .burger-table-row{
         width: 100%;
         padding-top: 12px;
-        border-bottom: 1px solid #ccc;
+        border-bottom:2px solid #ccc;
     }
 
     #burger-table-heading .order-id,
@@ -165,15 +168,17 @@ export default {
         width: 5%;
     }
 
-    .selects{
+    /* .selects{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         max-height: 40px;
-    }
+    } */
 
     select{
-        padding: 12px 6px;
+        padding: 12px 0px;
         margin-right: 12px;
+        width: 90px;
+        margin-bottom: 20px;
     }
 
     .delete-btn{

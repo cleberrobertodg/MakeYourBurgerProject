@@ -189,65 +189,23 @@
   ],
   "burgers": [
     {
-      "id": "8aae",
-      "nome": "Cleber",
-      "carne": "Alcatra",
-      "pao": "Brioche",
-      "batata": "Onion rings",
-      "bebida": "Fanta laranja",
-      "opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Cebola crispy",
-        "Tomate",
-        "Cebola roxa",
-        "Picles",
-        "Alface americana",
-        "Molho da casa",
-        "Katchup",
-        "Mostarda",
-        "Maionese"
-      ],
-      "sobremesa": "Cascão",
-      "status": "Solicitado"
-    },
-    {
-      "id": "ebbf",
-      "nome": "CLEBER ROBERTO TESTE",
-      "carne": "Maminha",
-      "pao": "Australiano",
+      "id": "6d72",
+      "nome": "Cleber Teste Hamburger",
+      "carne": "Costela",
+      "pao": "Gergelim",
       "batata": "Simples",
       "bebida": "Coca-Cola",
       "opcionais": [
         "Bacon",
-        "Picles",
-        "Molho da casa",
-        "Cheddar",
         "Cebola roxa",
-        "Alface americana"
-      ],
-      "sobremesa": "Pettit gateau",
-      "status": "Solicitado"
-    },
-    {
-      "id": "6e2b",
-      "nome": "Eduardo",
-      "carne": "Picanha",
-      "pao": "Australiano",
-      "batata": "Cheddar e bacon",
-      "bebida": "Fanta laranja",
-      "opcionais": [
-        "Bacon",
-        "Cebola crispy",
-        "Mostarda",
-        "Maionese",
-        "Katchup",
-        "Alface americana",
+        "Molho da casa",
+        "Picles",
+        "Cheddar",
         "Tomate",
-        "Cheddar"
+        "Maionese"
       ],
-      "sobremesa": "Açaí",
-      "status": "Solicitado"
+      "sobremesa": "Brownie",
+      "status": "Em produção"
     }
   ]
 }
