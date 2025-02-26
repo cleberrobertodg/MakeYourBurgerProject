@@ -136,6 +136,10 @@
       {
         "id": 11,
         "tipo": "Maionese"
+      },
+      {
+        "id": 12,
+        "tipo": "Extra carne"
       }
     ],
     "sobremesas": [
@@ -206,6 +210,19 @@
       ],
       "sobremesa": "Brownie",
       "status": "Em produção"
+    },
+    {
+      "id": "9b42",
+      "nome": "Cleber",
+      "carne": "Maminha",
+      "pao": "Australiano",
+      "batata": "Simples",
+      "bebida": "Coca-Cola",
+      "opcionais": [
+        "Cebola roxa"
+      ],
+      "sobremesa": "Cascão",
+      "status": "Solicitado"
     }
   ]
 }

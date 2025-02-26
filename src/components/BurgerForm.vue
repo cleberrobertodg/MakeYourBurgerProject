@@ -61,92 +61,94 @@
 <script>
 import Message from './Message';
 
-    export default{
-        name: "BurgerForm ",
-        data(){
-            return{
-                paes: null,
-                carnes: null,
-                opcionaisdata: null,
-                sobremesas: null,
-                batatas: null,
-                bebidas: null,
-                nome: null,
-                pao: null,
-                carne: null,
-                opcionais: [],
-                sobremesa: null,
-                batata: null,
-                bebida: null,
-                msg: null
-            }
-        },
-        methods: {
-            async getIngredientes(){
-
-                const req = await fetch("http://localhost:3000/ingredientes");
-                const data = await req.json();
-
-                this.paes = data.paes
-                this.carnes = data.carnes
-                this.opcionaisdata = data.opcionais
-                this.sobremesas = data.sobremesas
-                this.batatas = data.batatas
-                this.bebidas = data.bebidas
-
-            },
-            async createBurger(e){
-
-                e.preventDefault();
-
-                const data = {
-                    nome: this.nome,
-                    carne: this.carne,
-                    pao: this.pao,
-                    batata: this.batata,
-                    bebida: this.bebida,
-                    opcionais: Array.from(this.opcionais),
-                    sobremesa: this.sobremesa,
-                    status: "Solicitado"
-                }
-                
-                const dataJson = JSON.stringify(data);
-
-                const req = await fetch("http://localhost:3000/burgers", {
-                    method: "POST",
-                    headers: {"Content-Type": "application/json"}, 
-                    body: dataJson
-                });
-
-                const res  = await req.json();
-
-                //coloca msg no sistema
-                this.msg = `Pedido N° ${res.id} realizado com sucesso`
-                //Limpa msg
-                setTimeout(()=> this.msg = "", 2000)
-
-                // Limpa o formulário
-                this.nome = "";
-                this.carne = "";
-                this.pao = "";
-                this.batata = "";
-                this.bebida = "";
-                this.opcionais = [],
-                this.sobremesas = "";
-
-                setTimeout(()=> window.location.href = "/pedidos", 2000)
-                
-
-            }
-        },
-        mounted(){
-            this.getIngredientes()
-        },
-        components: {
-            Message
+export default {
+    name: "BurgerForm",
+    data() {
+        return {
+            paes: null,
+            carnes: null,
+            opcionaisdata: null,
+            sobremesas: null,
+            batatas: null,
+            bebidas: null,
+            nome: null,
+            pao: null,
+            carne: null,
+            opcionais: [],
+            sobremesa: null,
+            batata: null,
+            bebida: null,
+            msg: null
         }
+    },
+    methods: {
+        async getIngredientes() {
+            // Fazendo uma requisição para o backend para obter os ingredientes
+            const res = await fetch("http://localhost:3000/ingredientes");
+            const data = await res.json();
+
+            console.log("DB::::", { data });
+
+            this.paes = data.paes;
+            this.carnes = data.carnes;
+            this.opcionaisdata = data.opcionais;
+            this.sobremesas = data.sobremesas;
+            this.batatas = data.batatas;
+            this.bebidas = data.bebidas;
+        },
+        async createBurger(e) {
+            e.preventDefault();
+
+            const data = {
+                nome: this.nome,
+                carne: this.carne,
+                pao: this.pao,
+                batata: this.batata,
+                bebida: this.bebida,
+                opcionais: Array.from(this.opcionais),
+                sobremesa: this.sobremesa,
+                status: "Solicitado"
+            };
+
+            const dataJson = JSON.stringify(data);
+
+            // Requisição POST para o servidor backend
+            const req = await fetch("http://localhost:3000/burgers", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: dataJson
+            });
+
+            const res = await req.json();
+
+            // Mensagem de sucesso
+            this.msg = `Pedido N° ${res.id} realizado com sucesso`;
+
+            // Limpa a mensagem após 2 segundos
+            setTimeout(() => (this.msg = ""), 2000);
+
+            // Limpa o formulário
+            this.nome = "";
+            this.carne = "";
+            this.pao = "";
+            this.batata = "";
+            this.bebida = "";
+            this.opcionais = [];
+            this.sobremesas = "";
+
+            // Redireciona para a página de pedidos após 2 segundos
+            setTimeout(() => (window.location.href = "/pedidos"), 2000);
+        }
+    },
+    mounted() {
+        this.getIngredientes();
+    },
+    components: {
+        Message
     }
+};
 </script>
+
 
 <style scoped>
     #burger-form{
