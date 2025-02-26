@@ -9,6 +9,8 @@
                 <div>Batata:</div>
                 <div>Pão:</div>
                 <div>Carne:</div>
+                <div>Qtd Carnes:</div>
+                <div>Queijo:</div>
                 <div>Opcionais:</div>
                 <div>Sobremesa:</div>
                 <div>Status:</div>
@@ -23,6 +25,8 @@
                 <div>{{ burger.batata }}</div>
                 <div>{{ burger.pao }}</div>
                 <div>{{ burger.carne }}</div>
+                <div>{{ burger.qtdCarne }}</div>
+                <div>{{ burger.queijo }}</div>
                 <div>
                     <ul>
                         <li v-for="(opcional, index) in burger.opcionais" :key="index">{{ opcional }}</li>

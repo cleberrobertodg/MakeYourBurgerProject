@@ -10,29 +10,43 @@
                 <div class="input-container">
                     <label for="bebida">Escolha a bebida:</label>
                     <select name="bebida" id="bebida" v-model="bebida">
-                        <option value="">Selecione a sua bebida</option>
+                        
                         <option v-for="bebida in bebidas" :key="bebida.id" :value="bebida.tipo">{{ bebida.tipo }}</option>
                     </select>
                 </div>
                 <div class="input-container">
                     <label for="batata">Escolha o acompanhamento:</label>
                     <select name="batata" id="batata" v-model="batata">
-                        <option value="">Selecione o seu acompanhamento</option>
+                        
                         <option v-for="batata in batatas" :key="batata.id" :value="batata.tipo">{{ batata.tipo }}</option>
                     </select>
                 </div>
                 <div class="input-container">
                     <label for="pao">Escolha o pão:</label>
                     <select name="pao" id="pao" v-model="pao">
-                        <option value="">Selecione o seu pão</option>
+                        
                         <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">{{ pao.tipo }}</option>
                     </select>
                 </div>
                 <div class="input-container">
-                    <label for="carne">Escolha a carne do seu burger:</label>
+                    <label for="carne">Escolha a carne:</label>
                     <select name="carne" id="carne" v-model="carne">
-                        <option value="">Selecione o tipo de carne</option>
+                        
                         <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">{{ carne.tipo }}</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="carne">Escolha a quantidade de carnes:</label>
+                    <select name="qtd-carne" id="qte-carne" v-model="qtdCarne">
+                        
+                        <option v-for="qtdCarne in qtdCarnes" :key="qtdCarne.id" :value="qtdCarne.tipo">{{ qtdCarne.tipo }}</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="queijo">Escolha o queijo:</label>
+                    <select name="queijo" id="queijo" v-model="queijo">
+                        
+                        <option v-for="queijo in queijos" :key="queijo.id" :value="queijo.tipo">{{ queijo.tipo }}</option>
                     </select>
                 </div>
                 <div id="opcionais-container" class="input-container">
@@ -67,6 +81,8 @@ export default {
         return {
             paes: null,
             carnes: null,
+            qtdCarnes: null,
+            queijos: null,
             opcionaisdata: null,
             sobremesas: null,
             batatas: null,
@@ -74,6 +90,8 @@ export default {
             nome: null,
             pao: null,
             carne: null,
+            qtdCarne: null,
+            queijo: null,
             opcionais: [],
             sobremesa: null,
             batata: null,
@@ -91,6 +109,8 @@ export default {
 
             this.paes = data.paes;
             this.carnes = data.carnes;
+            this.qtdCarnes = data.qtdCarnes;
+            this.queijos = data.queijos;
             this.opcionaisdata = data.opcionais;
             this.sobremesas = data.sobremesas;
             this.batatas = data.batatas;
@@ -102,6 +122,8 @@ export default {
             const data = {
                 nome: this.nome,
                 carne: this.carne,
+                qtdCarne: this.qtdCarne,
+                queijo: this.queijo,
                 pao: this.pao,
                 batata: this.batata,
                 bebida: this.bebida,
@@ -130,6 +152,8 @@ export default {
             // Limpa o formulário
             this.nome = "";
             this.carne = "";
+            this.qtdCarne = "";
+            this.queijo = "";
             this.pao = "";
             this.batata = "";
             this.bebida = "";
