@@ -16,6 +16,10 @@
       {
         "id": 4,
         "tipo": "Nuggets"
+      },
+      {
+        "id": 5,
+        "tipo": "Sem acompanhamento"
       }
     ],
     "bebidas": [
@@ -42,6 +46,11 @@
       {
         "id": 6,
         "tipo": "Del Valle Laranja"
+      }
+      ,
+      {
+        "id": 7,
+        "tipo": "Sem bebida"
       }
     ],
     "paes": [
@@ -193,23 +202,31 @@
       },
       {
         "id": 4,
-        "tipo": "Frozen yogurt"
-      },
-      {
-        "id": 4,
-        "tipo": "Torta de maçã"
+        "tipo": "Salada de frutas"
       },
       {
         "id": 5,
-        "tipo": "Torta de pêssego"
+        "tipo": "Frozen yogurt"
       },
       {
         "id": 6,
-        "tipo": "Brownie"
+        "tipo": "Torta de maçã"
       },
       {
         "id": 7,
+        "tipo": "Torta de pêssego"
+      },
+      {
+        "id": 8,
+        "tipo": "Brownie"
+      },
+      {
+        "id": 9,
         "tipo": "Pettit gateau"
+      },
+      {
+        "id": 10,
+        "tipo": "Alfajor"
       }
     ]
   },
