@@ -3,11 +3,11 @@
     "batatas": [
       {
         "id": 1,
-        "tipo": "Simples"
+        "tipo": "Batata Simples"
       },
       {
         "id": 2,
-        "tipo": "Cheddar e bacon"
+        "tipo": "Batata Cheddar e bacon"
       },
       {
         "id": 3,
