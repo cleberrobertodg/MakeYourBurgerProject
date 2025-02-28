@@ -289,6 +289,30 @@
       ],
       "sobremesa": "Açaí",
       "status": "Solicitado"
+    },
+    {
+      "id": "b7d8",
+      "nome": "Cleber",
+      "carne": "Veggie burger",
+      "qtdCarne": "2",
+      "queijo": "Veggie cheese",
+      "pao": "Integral",
+      "batata": "Batata Cheddar e bacon",
+      "bebida": "Coca-Cola Zero",
+      "opcionais": [
+        "Picles",
+        "Katchup",
+        "Maionese",
+        "Mostarda",
+        "Molho da casa",
+        "Alface americana",
+        "Cebola roxa",
+        "Cebola crispy",
+        "Bacon",
+        "Tomate"
+      ],
+      "sobremesa": "Torta de pêssego",
+      "status": "Solicitado"
     }
   ]
 }

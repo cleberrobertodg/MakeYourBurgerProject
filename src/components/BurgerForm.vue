@@ -59,7 +59,7 @@
                 <div class="input-container">
                     <label for="sobremesa">Escolha sua sobremesa:</label>
                     <select name="sobremesa" id="sobremesa" v-model="sobremesa">
-                        <option value="">Selecione a sobremesa</option>
+                        
                         <option v-for="sobremesa in sobremesas" :key="sobremesa.id" :value="sobremesa.tipo">{{ sobremesa.tipo }}</option>
                     </select>
                 </div>
